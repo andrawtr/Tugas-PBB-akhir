@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.andra.myapplication.motor"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/left_vertical"
+        android:paddingLeft="@dimen/left_horizontal"
+        android:paddingRight="@dimen/right_horizontal"
+        android:paddingTop="@dimen/right_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/txtmotornama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/fnama"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtmotoralamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/falamat"
+            android:inputType="textMultiLine"
+            android:lines="4" />
+
+        <EditText
+            android:id="@+id/txtmotormerk"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/fmerk"
+            android:inputType="textPersonName"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/txtmotortglpeminjaman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/ftglpeminjaman"
+            android:inputType="textPersonName"
+            android:onClick="tglPeminjamanMotor"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/txtmotortglpengembalian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/ftglpengembalian"
+            android:inputType="textPersonName"
+            android:onClick="tglPengembalianMotor"
+            android:focusable="false"/>
+
+        <Button
+            android:id="@+id/btnmotorkonfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="konfirmasiDataMotor"
+            android:text="@string/button2" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
